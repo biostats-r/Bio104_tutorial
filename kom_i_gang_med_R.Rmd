@@ -1,0 +1,14 @@
+---
+title: "BIO104  - Labkurs i mikrobiologi"
+output:
+   bookdown::html_document2:
+     highlight: tango
+     toc: true
+     toc_float: true
+     css: ./css/style-chapters.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
+library("tidyverse")
+```
