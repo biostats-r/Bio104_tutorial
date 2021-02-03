@@ -1,0 +1,73 @@
+---
+title: "Add your title here"
+author: 
+- "Author: Add your name here"
+- "Lab partner: Add name of labpartner here"
+- "Group number: Add your group number here (1-4)"
+- "Bench number: Add the specific group number to you and your lab partner here (1-8)"
+date: "Add the date of your lab day here"
+output: html_document
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library("tidyverse")
+```
+
+## Introduction
+
+Start with a short introduction to the topic followed by a detailed description of the molecular mechanisms involved in diauxic growth. In the end of the introduction write a few words on what the main questions are and what you are expecting in this study/experiment. Please consult the "General Information" file on MittUiB for more detailed information about this report.\
+
+## Materials and Methods
+
+Describe with your own words how the experiment was conducted. It is not necessary to explain how a spectrophotometer works, but it is natural to mention why you used it in your experiment (measure absorbance over time to follow the bacterial growth). Remember to include the description of the control culture.\
+
+
+## Results
+
+Describe your result (and the control) and remember to refer to your figure.\
+Please consult the **BIO104_Managing_data_R.html** file that has been uploaded to MittUiB
+
+```{r collectingdataset, echo=FALSE}
+# Start by reading your data set
+... <- read_csv2(file = "...")
+```
+
+```{r convert, echo=FALSE}
+# Sort the data
+... <- ... %>% 
+  gather(key = "...", value = "...",  ..., ...) %>%
+  arrange(...)
+```
+
+Show a graph of your result. \
+Select a different color on the control and diauxic growth curve than the standard output.\
+Select a different shape on the control and diauxic datapoints than the standard output.\
+Choose a theme you think present your figure well.\
+```{r plot, eval=TRUE, echo=FALSE, fig.cap="ADD FIGURE TEXT HERE"}
+... %>% 
+  ggplot(aes(x = ..., y = ... ), color = ..., shape = ...) +
+    geom_point(size = ...) +
+    geom_line(...) +
+    labs(...) +
+    theme_put.a.theme.here(base_size = ...)
+```
+
+## Discussion
+
+Discuss the results\
+
+## References:
+
+Add only the references you have used in the text\
+
+## Supplementary
+
+I would like for you to add a table with your data in the end here.\
+
+```{r tabel, eval=TRUE, echo=FALSE, fig.cap="ADD TABEL TEXT HERE"}
+knitr::kable(growth_gathered)
+```
+
