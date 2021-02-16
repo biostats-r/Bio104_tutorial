@@ -4,7 +4,7 @@ author:
 - "Author: Add your name here"
 - "Lab partner: Add name of labpartner here"
 - "Group number: Add your group number here (1-4)"
-- "Bench number: Add the specific group number to you and your lab partner here (1-8)"
+- "Team number (lag nummer): Add the specific team you were assign to during the lab"
 date: "Add the date of your lab day here"
 output: html_document
 
@@ -18,7 +18,7 @@ library("tidyverse")
 
 ## Introduction
 
-Start with a short introduction to the topic followed by a detailed description of the molecular mechanisms involved in diauxic growth. In the end of the introduction write a few words on what the main questions are and what you are expecting in this study/experiment. Please consult the "General Information" file on MittUiB for more detailed information about this report.\
+Start with a short introduction to the topic followed by a detailed description of the molecular mechanisms involved in diauxic growth. In the end of the introduction write a few words on what the main questions are and what you are expecting in this study/experiment. Please consult the "BIO104_Assignment_info.html" file that you downloaded with this template for more detailed information about the assignment.\
 
 ## Materials and Methods
 
@@ -28,7 +28,8 @@ Describe with your own words how the experiment was conducted. It is not necessa
 ## Results
 
 Describe your result (and the control) and remember to refer to your figure.\
-Please consult the **BIO104_Managing_data_R.html** file that has been uploaded to MittUiB
+Please consult **Kom i gang med R** for how this should be done in R:
+<https://bioceed.uib.no/dropfolder/sites/bioSTATS-and-R/Courses/BIO104/BIO104_kom_i_gang_med_R.html#1_Om_RRStudio>
 
 ```{r collectingdataset, echo=FALSE}
 # Start by reading your data set
