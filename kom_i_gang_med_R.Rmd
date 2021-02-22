@@ -22,7 +22,7 @@ Som en del av kurset skal du lære å bruke R/RStudio for å
 
 + lage og importere et enkelt datasett 
 + lage en tabell, 
-+ tegne en plot,
++ tegne et plot,
 + sette alt sammen til en fullstending rapport.
 
 Øvelsen skal utføres i R/RStudio. 
@@ -38,7 +38,7 @@ R er et kraftig og fleksibelt verktøy som gjør jobben med data analyse enkelt 
 I motsetning til de fleste programvarene som du kjenner bruker R/RStudio kommandoer for å utføre oppgaver. 
 Det betyr at du skal skrive kode for å håndtere data og for å lage tabeller og plotter.
 
-Ved hjelp av denne siden skal du lære å bruke språket R for å skrive enkle "setninger" som transformere data til tabeller og figurer som skal brukes i din rapport.
+Ved hjelp av denne siden skal du lære å bruke språket R for å skrive enkle "setninger" som transformerer data til tabeller og figurer som skal brukes i din rapport.
 
 ## Et alternativt grensesnitt
 
@@ -48,7 +48,7 @@ Det finnes flere sånne programvarer.
 Den som vi anbefaler og viser til heter [RStudio](https://rstudio.com){target="_blank"}.  
 
 Merk at RStudio brukes _i kombinasjon med R_, ikke istedenfor R. 
-Derfor kommer du til å installere begge på din maskin (se seksjon \@ref(installer-r-og-rstudio)). 
+Derfor må du installere begge på din maskin (se seksjon \@ref(installer-r-og-rstudio)). 
 RStudio tar over R sitt grensesnitt, men alle beregninger utføres av R "i bakgrunnen". 
 Dette forklarer hvorfor du skal ofte lese "R/RStudio" på denne siden.
 
@@ -57,12 +57,12 @@ Dette forklarer hvorfor du skal ofte lese "R/RStudio" på denne siden.
 
 Det finnes mange fordeler med å ta R/RStudio i bruk:
 
-+ Først og fremst er R _fri_ og _open-source_, og kan installeres den på de fleste maskinene (Windows, Mac, Linux, osv).
++ Først og fremst er R _fri_ og _open-source_, og kan installeres på de fleste maskinene (Windows, Mac, Linux, osv).
 + R kan utføre veldig enkle numeriske oppgaver (for eksempel kan R brukes som en helt vanlig kalkulator og regne ut `2+2`, `(2+3)*4`, logaritme (`log(42)`), eller kvadratrot (`sqrt(42)`), samt veldig avanserte statistiske analyser (f. eks. for å bygge data modeller basert på millioner av observasjoner).  
 + R er i konstant utvikling; det kan nedlastes utvidelser (som kalles for "R-pakker" eller "R-packages") som utvider funksjonalitetene.
 + R brukes av mange i akademia, og spesielt i biologi. 
 Dermed finnes det garantert noen i nærheten av deg som kan hjelpe til når du er i trøbbel. 
-+ Fordi R brukes av mange i hele verden og i mange discipliner, finnes det et stort sammfunn online som kan hjelpe deg (det forumet [Stack Overflow](https://stackoverflow.com/){target="_blank"} er godt kjent blant R-brukere)
++ Fordi R brukes av mange i hele verden og i mange disipliner, finnes det et stort sammfunn online som kan hjelpe deg (det forumet [Stack Overflow](https://stackoverflow.com/){target="_blank"} er godt kjent blant R-brukere)
 
 ## R/RStudio i biologiemner
 
@@ -75,12 +75,12 @@ Derfor er det lurt å bli kjent med R så fort som mulig.
 
 Det finnes mange steder der du kan finne hjelp og informasjon om R/RStudio:
 
-+ vår nettside [bioST@TS](https://biostats.w.uib.no/up-in-the-r-2/){target="_blank"} har en dedikert seksjon hvor du skal lære mye om både R/RStudio og statistikk.
-+ de oraklene på [biORAKEL](https://biorakel.w.uib.no){target="_blank"} er kjent med R/RStudio og tilbyr deg hjelp når du trenger det.  
++ nettsiden vår [bioST@TS](https://biostats.w.uib.no/up-in-the-r-2/){target="_blank"} har en dedikert seksjon hvor du skal lære mye om både R/RStudio og statistikk.
++ oraklene på [biORAKEL](https://biorakel.w.uib.no){target="_blank"} er kjent med R/RStudio og kan tilby deg hjelp når du trenger det.  
 + [codeRclub](https://codeRclub.w.uib.no){target="_blank"} er et møtested for de som lærer eller jobber med R/RStudio.
 Alle er velkommen og kan søke hjelp hos oss. 
 Vi møtes på fredager fra kl.14:00 til 16:00 på Tunet (4. etasje på biologen, bygg A, Thormøhlensgate 53A, UiB) og på Zoom (ta kontakt med [Richard Telford](mailto:richard.telford@uib.no) for å få lenken). 
-Kom på besøk om du er i trøbbel eller lurer på noe.
+Kom på besøk om du sitter fast eller lurer på noe.
 + på nettet finner du mange fora der du får løsning på problemene dine. 
 Ofte er det "bare" å google.
 Mange spørsmål stilles på [Stack Overflow](https://stackoverflow.com/questions/tagged/r){target="_blank"}, og mange gode svar finnes der òg.
@@ -93,25 +93,20 @@ Deretter skal vi åpne "prosjektet" og bli kjent med grensesnittet til RStudio.
 
 ## Installer R og RStudio
 
-Som UiB student får du tilgang til mange programvarer via [UiB Tredjepartsportalen](https://apps.uib.no){target="_blank"}.
-Der finner du både R og RStudio.
-Informasjon om hvordan du får tilgang til portalen finner du [her på Mitt UiB](https://mitt.uib.no/courses/22090){target="_blank"}.
-Søk etter de programvarene og installer dem på din maskin.  
-
-Alternativt kan du laste ned R direkte fra nettsiden til [The Comprehensive R Archive Network](https://cloud.r-project.org/){target="_blank"} og RStudio fra [RStudio sin nettside](https://rstudio.com/products/rstudio/download/#download){target="_blank"}. 
+Programvarene kan du laste ned direkte fra nettsiden til [The Comprehensive R Archive Network](https://cloud.r-project.org/){target="_blank"} og RStudio fra [RStudio sin nettside](https://rstudio.com/products/rstudio/download/#download){target="_blank"}. 
 Pass på at du velger den versjonen som passer din maskin.
 
 ## Last ned filene
 
 Nå skal vi hente de filene som du trenger til øvelsen.
-Klikk på [denne lenken](https://github.com/biostats-r/Bio104_tutorial/archive/main.zip){target="_blank"} for å nedlaste filen `Bio104_tutorial-main.zip`.
+Klikk på [denne lenken](https://bioceed.uib.no/dropfolder/sites/bioSTATS-and-R/Courses/BIO104/BIO104-labkurs2021.zip){target="_blank"} for å nedlaste filen `Bio104-labkurs2021.zip`.
 Åpne denne filen og ekstraher den hele mappen på harddisken din.
 Velg et lurt sted, f.eks `.\Mine dokumenter\BIO104\` eller lignende.
 
 
 ## Første steg i RStudio
 
-Mest av tiden kommer du til å starte R/RStudio ved å åpne et prosjekt.
+Stort sett kommer du til å starte R/RStudio ved å åpne et prosjekt.
 Et prosjekt består av en mappe som inneholder en .Rproj-fil og eventuelt andre filer (data filer, skript, osv).
 I denne øvelsen heter filen `Bio104_tutorial.Rproj`.
 Når du dobbelklikker på filen, så åpnes den direkte i RStudio.
@@ -141,7 +136,7 @@ Dessuten skal vi ta bruk av skript (se seksjon \@ref(skript)).
 
 Et skript er et arbeidsdokument der du skriver kode, kommentarer og tekst.
 Du kan starte jobben i R/RStudio med et blankt skript, eller åpne et forhåndsfylt skript.
-I denne øvelsen skal vi jobbe i en forhåndsfylt fil som heter `Bio101_Template_rapport.Rmd`. 
+I denne øvelsen skal vi jobbe i en forhåndsfylt fil som heter `Bio104_Template_rapport.Rmd`. 
 Vi kommer tilbake til det senere i seksjonen \@ref(kjor-ovelsen).  
 
 Hvis du ønsker å opprette et nytt skript for å jobbe med noe annet eller trene på koding, så trykker du på `CTRL + Shift + N` (`⌘ + Shift + N`), eller velger File > New File > R Script i menyen øverst. 
@@ -204,18 +199,19 @@ knitr::include_graphics("Pics/BIO104-RStudio-files-menu.png")
 R-pakker (altså "packages") er utvidelser som legger til funksjoner og funksjonaliteter i R.
 Noen pakker gir muligheten til å rydde datasett, noen lar deg tegne fine plotter, osv.
 
-I den øvelsen trenger vi pakken `tidyverse`. 
+I den øvelsen trenger vi pakkene `tidyverse` og `rmarkdown`. 
 `tidyverse` samler funskjoner fra mange mindre pakker som f. eks. `ggplot2`, `tidyr` and `dplyr` som lar deg tegne fine plott, rydde og sortere datasett, og filtrere dataene.
-`tidyverse` installeres via konsolen ved hjelp av funksjonen `install.packages()`. Kopiér og lim inn den følgende linjen direkte i konsolen, og trykk `Enter`:
+Pakkene installeres via konsolen ved hjelp av funksjonen `install.packages()`. Kopiér og lim inn den følgende linjen direkte i konsolen, og trykk `Enter`:
 ```{r install-packages, echo = TRUE, eval=FALSE}
-install.packages("tidyverse")
+install.packages(c("tidyverse", "rmarkdown"))
 ```
 
 `install.packages()` tar seg av å nedlaste og installere pakker i R/RStudio.
-Dessuten bruker du funksjonen `library()` for å aktivere de installerte pakkene nå de trenges.
+Dessuten bruker du funksjonen `library()` for å aktivere de installerte pakkene når de trenges.
 Da kan du kopiere og lime inn denne koden i konsolen:
 ```{r activate-packages, echo = TRUE, eval=FALSE}
 library(tidyverse)
+library(rmarkdown)
 ```
 
 
@@ -271,7 +267,7 @@ Du skal lære å:
 + lage en tabell som viser dataene,
 + tegne et linjeplott som viser resultatet av eksperimentet.
 
-Det skal gi deg alt kunnskapen som du trenger for å skrive din rapport.
+Det skal gi deg all kunnskapen som du trenger for å skrive din rapport.
 
 
 ## Datainnsamling
@@ -351,13 +347,13 @@ knitr::include_graphics("Pics/BIO104-RStudio-knitr-ferdig.png")
 Vi går tilbake til malen i RStudio.
 Øverst i malen finner du et området som både starter og slutter på ` --- ` (se Figur \@ref(fig:rstudio-Template-topp)).
 Dette er toppteksten.
-Målet med toppteksten erå vise tittelen, navnet på forfatteren, navnet på labpartneren, gruppenummeret, benkenummeret og dato øverst i rapporten.
+Målet med toppteksten er å vise tittelen, navnet på forfatteren, navnet på labpartneren, gruppenummeret, lagnummeret og dato øverst i rapporten.
 ```{r rstudio-Template-topp, echo = FALSE, fig.cap="_Her skal du redigere toppteksten._", out.width="100%"}
 knitr::include_graphics("Pics/BIO104-RStudio-Template-topp.png")
 ```
 
 Legg til tittelen og alt som trenges mellom `"` `"`.
-Husk å ikke fjerne `" "`!
+Pass på å ikke fjerne `" "`!
 Den siste linjen med `output: html_document` må du la stå uendret.
 
 
@@ -395,31 +391,31 @@ Hvis du trenger litt hjelp med å skrive den delen, kan du gå til [denne bioSKR
 I denne seksjonen skal du presentere resultatene fra både kontrollen og eksperimentet. Les og følg instruksjonene i malen.
 Hvis du trenger litt hjelp med å skrive den delen, kan du gå til [denne bioSKRIV-siden](https://bioskriv.w.uib.no/struktur-imrod/#resultat){target="_blank"}.
 
-Du skal legge til en figur som viser resultateten i form av en linjeplott. Til dette skal vi bruke tre code-chunks: `collectingdataset`, `convert` og `plot`:
+Du skal legge til en figur som viser resultatetet i form av et linjeplott. Til dette skal vi bruke tre code-chunks: `collectingdataset`, `convert` og `plot`:
 
 + `collectingdataset` skal brukes til å importere datasettet i R og gi det et navn.
 + `convert` skal konvertere datasettet i en ryddig tabell som kan behandles av funksjoner i `tidyverse`.
-+ `plot` skal tegne det linjeplottet med resultatene av eksperimentet.
++ `plot` skal tegne linjeplottet med resultatene fra eksperimentet.
 
 #### Chunk collectingdataset
 
 Her skal vi skrive koden som importerer datafilen i R/RStudio ved hjelp av en dedikert funskjon.
-Hvis du har fulgt instruks på denne siden, heter datafilen `diauxi_data.csv` og ligger nå i `\data` mappen. Stien til datafilen er da `\data\diauxi_data.csv`. Husk den, den skal brukes i funksjonen. Hvis du har brukt et annet navn eller mappe, så blir du nødt til å tilpasse stien.  
+Hvis du har fulgt instruksene på denne siden, heter datafilen `diauxi_data.csv` og ligger nå i `\data` mappen. Stien til datafilen er da `data/diauxi_data.csv`. Husk den, den skal brukes i funksjonen. Hvis du har brukt et annet navn eller mappe, så blir du nødt til å tilpasse stien.  
 
 Det finnes mange funksjoner som kan importere data i R. Her skal vi bruke `read_csv2()` som er en del av `readr` i `tidyverse`. 
-`read_csv2()` er laget for å importere CSV-filer der `;` ble brukt for å dele dataene og siden `,` er desimaltegnet.
-(NB: hvis du åpner din datafil og oppdager at `.` er desimaltegnet og `,` er den symbolen som deler dataene, så skal du bruke `read_csv()` istedenfor).
+`read_csv2()` er laget for å importere CSV-filer der `;` blir brukt for å dele dataene og `,` er desimaltegnet.
+(NB: hvis du åpner din datafil og oppdager at `.` er desimaltegnet og `,` er symbolet som deler dataene, så skal du bruke `read_csv()` istedenfor).
 
 Koden i chunk-en blir som følger:
-```{r collectingdataset, echo=TRUE, include=FALSE}
+```{r collectingdataset, echo=TRUE, message=FALSE}
 # Start by reading your data set
 growth <- read_csv2(file = "data/diauxi_data.csv")
 ```
 
 Her ser du at vi har skrevet `growth <-` foran koden.
-Det brukes til å navngi datasettet i R. Her høres det logisk ut å kalle datasettet `growth`, men du kan gi det et annet navn.
-Poenget med å gi et navn er å kunne bruke datasettet igjen og igjen, bare ved å skrive det navn istedefor å skrive hele kodelinjen i chunken hver gang.
-for eksempel kan vi nå utføre koden `growth` for å lese hele datasettet i R:
+Det brukes til å navngi datasettet i R. Her er det logisk å kalle datasettet `growth`, men du kan gi det et annet navn om du ønsker.
+Poenget med å gi et navn er å kunne bruke datasettet igjen og igjen, bare ved å skrive det navnet istedefor å skrive hele kodelinjen i chunken hver gang.
+For eksempel kan vi nå utføre koden `growth` for å lese hele datasettet i R:
 
 ```{r view, echo=TRUE}
 # folgende kode viser datasettet
@@ -434,15 +430,15 @@ I rapporten skal du fylle ut koden i chunken `{r collectingdataset}` med alt som
 
 #### Chunk convert
 
-Nå skal vi konvertere datasettet slik at det blir lesbart til funksjonene som skal tegne plottet. 
-Vi gjør det ved bruk av R-pakken `tidyr` som er inkludert i `tidyverse`.  
+Nå skal vi konvertere datasettet slik at det blir lesbart av funksjonene som skal tegne plottet. 
+Vi gjør det ved bruk av R-pakken `tidyr` som er inkludert i `tidyverse`.
 Grunnen for at dette **må** gjøres er at R og `tidyverse` jobber bare med *tidy data*, i.e. ryddig data, der hver variabel utgjør en kolonne, og hver observasjon utgjør en rad (se følgende figur \@ref(fig:tidyr)):
 
 ```{r tidyr, echo = FALSE, fig.cap="_Bruk_ tidyr _til å rydde datasettet - kilde: [tidyr.tidyverse.org - RStudio - CC BY SA](https://tidyr.tidyverse.org/)_", out.width="100%"}
 knitr::include_graphics("Pics/BIO104-tidyr.png")
 ```
 
-Det datasettet som vi bruker (se figur \@ref(fig:rstudio-threecolumns)) viser målinger i to kolonner (`Control` og `Diauxic`), og hver rad viser to målinger; derfor innses datasettet som uryddig, og må omorganiseres.  
+Datasettet som vi bruker (se figur \@ref(fig:rstudio-threecolumns)) viser målinger i to kolonner (`Control` og `Diauxic`), og hver rad viser to målinger; derfor innses datasettet som uryddig, og må omorganiseres.  
 
 Planen er å lage ny tabell som:
 
@@ -458,7 +454,7 @@ growth_sorted <- growth %>%
   arrange(Time)
 ```
 
-Her ser du at vi har brukt `%>%` flere ganger. Denne symbolen heter "pipe" og kan oversettes til "deretter". 
+Her ser du at vi har brukt `%>%` flere ganger. Dette symbolet heter "pipe" og kan oversettes til "deretter". 
 Vi bruker den for å skrive en "kodesetning" der stegene følger hverandre på en logisk måte.
 Setningen leses: start med datasettet `growth`, deretter omorganiser alle kategoriene og målingene i to kolonner som heter `Treatment` og `Absorbance`, deretter sorter hele tabellen iht. `Time`.
 
@@ -482,7 +478,7 @@ I rapporten skal du fylle ut koden i chunken `{r convert}` med alt som trenges:
 
 #### Chunk plot
 
-Nå at vi har importert og konvertert datasettet, er det på tid å lage plottet.
+Nå som vi har importert og konvertert datasettet, er det på tid å lage plottet.
 Det skal gjøres ved bruk av funksjonen `ggplot()` i R-pakken `ggplot2` som er inkludert i `tidyverse`.  
 
 Plottet skal:
@@ -501,7 +497,7 @@ growth_sorted %>%
 ```
 
 
-Dette er et fint plott som kan forberdres på mange måter, f. eks. ved å legge til eller endre farger, symboler og mye annet.
+Dette er et ok plott, men det kan forberdres på mange måter, f. eks. ved å legge til eller endre farger, symboler og mye annet.
 
 #### Automatiske farger 
 
@@ -509,7 +505,7 @@ Dette er et fint plott som kan forberdres på mange måter, f. eks. ved å legge
 
 #### Symboler
 
-`ggplot()` lar deg legge til symboler til kategoriene i `Treatment` ved bruk av en ekstra linje med `geom_point()` og argumentet `shape =` i `aes()`. Størrelsen på symbolene endres med `size =` i `geom_point()`. Også, det er ingenting i veien for at `shape =` skal brukes i kombinasjon med `color =`.  
+`ggplot()` lar deg legge til symboler til kategoriene i `Treatment` ved bruk av en ekstra linje med `geom_point()` og argumentet `shape =` i `aes()`. Størrelsen på symbolene endres med `size =` i `geom_point()`. Også, det er ingenting i veien for at `shape =` skal brukes i kombinasjon med `color =`.
 
 Her er et eksempel som viser bruk av både farger og symboler:
 ```{r plot2, eval=TRUE, echo=TRUE, fig.cap="Figur 1B: mitt nye plott."}
@@ -520,7 +516,7 @@ growth_sorted %>%
 ```
 
 Ikke glem pluss-tegnet `+` til slutten av hver linje (bortsett fra den siste).
-Her merker du sikkert at en forklaringsboks dukker opp til høyre. Den kommer automatisk med `shape =` eller `color =`, men tydekigvis ikke med `group =`. 
+Her merker du sikkert at en forklaringsboks dukker opp til høyre. Den kommer automatisk med `shape =` eller `color =`, men tydeligvis ikke med `group =`. 
 
 #### Aksetitler
 
@@ -529,7 +525,7 @@ Aksetitler endres med funksjonen `labs(x = "navn på x-aksen", y = "navn på y-a
 #### Theme (utseende)
 
 Du kan endre hele utseende (bakgrunn, akselinjer, osv) ved bruk av en av de funksjonene i `theme_...()` familien. 
-[Denne siden](https://ggplot2.tidyverse.org/reference/ggtheme.html){target="_blank"} viser deg navn på dem.
+[Denne siden](https://ggplot2.tidyverse.org/reference/ggtheme.html){target="_blank"} viser deg navnene på dem.
 Mellom parentesene i den funksjonen `theme_()` kan du skrive `base_size =` og et nummer (f. eks. 15) for å endre tekststørrelsen.
 
 #### Manuelle farger
@@ -619,12 +615,12 @@ Hvis du trenger litt hjelp med å skrive figurteksten, kan du gå til [denne bio
 
 ## Skriv ut rapporten
 
-Når din rapport er ferdig, så er det bare å trykke på knappen `Knit`.
+Når rapporten din er ferdig, så er det bare å trykke på knappen `Knit`.
 Hvis alt er korrekt, så åpnes rapporten i et nytt vindu.
 Les gjennom dokumentet.
 Finner du noe feil, så kan du gå tilbake til malen og rette det.  
 
-Hvis det ligger noe feil i din kode, skal fanen `R Markdown` (ved siden av `Console`) vise feilmelding istedenfor å skrive ut rapporten. Les feilmeldingen, rett feilen(e), og trykk på `Knit` igjen.
+Hvis det ligger noen feil i koden din, skal fanen `R Markdown` (ved siden av `Console`) vise feilmelding istedenfor å skrive ut rapporten. Les feilmeldingen, rett feilen(e), og trykk på `Knit` igjen.
 
 
 Liker du din rapport akkurat som den er, så trykker du på `Open in Browser` øverst i vinduet. 
