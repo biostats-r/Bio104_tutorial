@@ -391,7 +391,7 @@ Hvis du trenger litt hjelp med å skrive den delen, kan du gå til [denne bioSKR
 I denne seksjonen skal du presentere resultatene fra både kontrollen og eksperimentet. Les og følg instruksjonene i malen.
 Hvis du trenger litt hjelp med å skrive den delen, kan du gå til [denne bioSKRIV-siden](https://bioskriv.w.uib.no/struktur-imrod/#resultat){target="_blank"}.
 
-Du skal legge til en figur som viser resultatetet i form av et linjeplott. Til dette skal vi bruke tre code-chunks: `collectingdataset`, `convert` og `plot`:
+Du skal legge til en figur som viser resultatet i form av et linjeplott. Til dette skal vi bruke tre code-chunks: `collectingdataset`, `convert` og `plot`:
 
 + `collectingdataset` skal brukes til å importere datasettet i R og gi det et navn.
 + `convert` skal konvertere datasettet i en ryddig tabell som kan behandles av funksjoner i `tidyverse`.
